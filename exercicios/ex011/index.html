@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="img/foto-m.png" type="image/png">
+        <img src="img/foto-g.png" alt="Imagem Flexível">
+    </picture>
+
+    <h1>Reproduzindo Mídia</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio preload="metadata" controls loop>
+        <source src="midia/brisket-taco.mp3" type="audio/mpeg">
+        <source src="midia/brisket-taco.mpeg" type="audio/ogg">
+        <source src="midia/brisket-taco.ogg" type="audio/wav">
+        <p>Infelizmente o seu navegador não consegue abrir este tipo de mídia <a href="midia/brisket-taco.mp3">Clique aqui para baixar o arquivo mp3</a></p>
+    </audio>
+</body>
+</html>

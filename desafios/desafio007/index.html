@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Imagem Flexível</title>
+</head>
+<body>
+    <h1>Esta é uma imagem flexível</h1>
+    <p>Aumente e diminua o tamanho da tela para testar.</p>
+    &#x1F596
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/foto-480.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="img/foto-720.jpg" type="image/jpg">
+        <img src="img/foto-full.jpg" alt="Foto Flexível">
+    </picture>
+</body>
+</html>
