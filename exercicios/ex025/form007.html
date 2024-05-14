@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <p>
+        <label for="iest">Estado</label>
+        <select name="est" id="iest">
+            <option value="" selected>Selecione seu Estado</option>
+            <optgroup label="Região Centro-Oeste">
+                <option value="GO">Goiás</option>
+                <option value="DF">Distrito Federal</option>
+            </optgroup>
+            <optgroup label="Região Sudeste">
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+            </optgroup>
+        </select>
+    </p>
+    <p>
+        <label for="iprof">Profissão</label>
+        <input type="text" name="prof" id="iprof" list="lstprof">
+        <datalist id="lstprof">
+            <option value="ADM">Administrador</option>
+            <option value="SEC">Secretário</option>
+            <option value="VIG">Vigilante</option>
+            <option value="JOG">Jogador</option>
+        </datalist>
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+</body>
+</html>
