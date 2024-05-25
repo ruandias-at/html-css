@@ -1,3 +1,74 @@
 @charset "UTF-8";
 
 /*Todas as Demais Mídias*/
+
+/*Typical Device Breakpoints
+------------------------------
+Pequenas Telas até 600px
+Celulares de 600px até 768px
+Tablet de 768px até 992px
+Desktop de 992px até 1200px
+Grandes Telas acima de 1200px
+------------------------------
+*/
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body {
+        background-image: url(../../imagens/back-print.jpg); /* Desnecessário */
+    }
+    main {
+        border: 2px solid black;
+    }
+    main::after {
+        content: "A Impressão foi feita através do site https://ruandias-at.github.io/projeto-impressora";
+        text-decoration: overline;
+    }
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+    #phone {
+        display: none;
+    }
+    #print {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {  /* Tablet */
+    body {
+        background-image: url(../../imagens/back-tablet.jpg);
+    }
+    #phone {
+        display: none;
+    }
+    #tablet {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) { /* Desktop */
+    body {
+        background-image: url(../../imagens/back-pc.jpg);
+    }
+    #phone {
+        display: none;
+    }
+    #desktop {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1201px) { /* Grandes Telas */
+    body {
+        background-image: url(../../imagens/back-tv.jpg);
+    }
+    #phone {
+        display: none;
+    }
+    #tv {
+        display: block;
+    }
+}
