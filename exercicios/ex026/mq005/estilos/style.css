@@ -24,8 +24,21 @@ header > h1 {
     font-size: 2em;
     font-weight: bolder;
 }
-menu {
+i#burger {
+    text-align: center;
+    color: white;
+    padding: 10px;
     display: block;
+    background-color: rgb(39, 39, 39);
+}
+i#burger:hover {
+    background-color: #fff;
+    color: #000000;
+    cursor: pointer;
+    transition-duration: .2s;
+}
+menu {
+    display: none;
 }
 menu > ul {
     list-style-type: none;
